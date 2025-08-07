@@ -296,7 +296,50 @@
         </div>
 
         <div class="listings-grid" id="listingsGrid">
-            <!-- Listings will be populated by JavaScript -->
+            <div class="listing-card" data-property-id="NY001234" data-host-id="host_001" data-property-type="Apartment" data-price="125" data-host-fname="John" data-host-lname="Smith" data-accommodates="4" data-room-type="Entire home/apt" data-city="New York" data-country="United States" data-latitude="40.7589" data-longitude="-73.9851" data-cancellation-policy="flexible" data-pool-available="false" data-no-of-reviews="87" data-homemade-food-available="true">
+    <div class="listing-image">Apartment in New York</div>
+    <div class="listing-content">
+      <div class="property-type">Apartment</div>
+      <div class="listing-title">Entire home/apt in New York</div>
+      <div class="location">New York, United States</div>
+      <div class="host-info">Hosted by John Smith</div>
+      <div class="listing-details"><span>4 guests</span><span>flexible cancellation</span></div>
+      <div class="price">$125 <small>night</small></div>
+      <div class="reviews"><span class="stars">★★★★☆</span><span>87 reviews</span></div>
+      <div class="amenities"><span class="amenity-tag">Homemade Food</span><span class="amenity-tag">WiFi</span><span class="amenity-tag">Kitchen</span></div>
+    </div>
+  </div>
+
+  <!-- Listing 2 -->
+  <div class="listing-card" data-property-id="NY005678" data-host-id="host_002" data-property-type="Studio" data-price="89" data-host-fname="Sarah" data-host-lname="Johnson" data-accommodates="2" data-room-type="Entire home/apt" data-city="New York" data-country="United States" data-latitude="40.7505" data-longitude="-73.9934" data-cancellation-policy="moderate" data-pool-available="false" data-no-of-reviews="156" data-homemade-food-available="false">
+    <div class="listing-image">Studio in New York</div>
+    <div class="listing-content">
+      <div class="property-type">Studio</div>
+      <div class="listing-title">Entire home/apt in New York</div>
+      <div class="location">New York, United States</div>
+      <div class="host-info">Hosted by Sarah Johnson</div>
+      <div class="listing-details"><span>2 guests</span><span>moderate cancellation</span></div>
+      <div class="price">$89 <small>night</small></div>
+      <div class="reviews"><span class="stars">★★★★☆</span><span>156 reviews</span></div>
+      <div class="amenities"><span class="amenity-tag">WiFi</span><span class="amenity-tag">Kitchen</span></div>
+    </div>
+  </div>
+
+  <!-- Listing 3 -->
+  <div class="listing-card" data-property-id="LA009876" data-host-id="host_003" data-property-type="Villa" data-price="350" data-host-fname="Michael" data-host-lname="Brown" data-accommodates="8" data-room-type="Entire home/apt" data-city="Los Angeles" data-country="United States" data-latitude="34.0522" data-longitude="-118.2437" data-cancellation-policy="strict" data-pool-available="true" data-no-of-reviews="43" data-homemade-food-available="true">
+    <div class="listing-image">Villa in Los Angeles</div>
+    <div class="listing-content">
+      <div class="property-type">Villa</div>
+      <div class="listing-title">Entire home/apt in Los Angeles</div>
+      <div class="location">Los Angeles, United States</div>
+      <div class="host-info">Hosted by Michael Brown</div>
+      <div class="listing-details"><span>8 guests</span><span>strict cancellation</span></div>
+      <div class="price">$350 <small>night</small></div>
+      <div class="reviews"><span class="stars">★★★★☆</span><span>43 reviews</span></div>
+      <div class="amenities"><span class="amenity-tag">Pool</span><span class="amenity-tag">Homemade Food</span><span class="amenity-tag">WiFi</span><span class="amenity-tag">Kitchen</span></div>
+    </div>
+  </div>
+
         </div>
         
         <div class="pagination" id="pagination">
@@ -304,387 +347,4 @@
         </div>
     </div>
 
-    <script>
-        // Mock data for listings - exactly matching your required columns
-        const listingsData = [
-            {
-                property_id: "NY001234",
-                host_id: "host_001",
-                property_type: "Apartment",
-                price_per_night_usd: 125,
-                host_fname: "John",
-                host_lname: "Smith",
-                accommodates: 4,
-                room_type: "Entire home/apt",
-                city: "New York",
-                country: "United States",
-                latitude: 40.7589,
-                longitude: -73.9851,
-                cancellation_policy: "flexible",
-                pool_available: false,
-                no_of_reviews: 87,
-                homemade_food_available: true
-            },
-            {
-                property_id: "NY005678",
-                host_id: "host_002",
-                property_type: "Studio",
-                price_per_night_usd: 89,
-                host_fname: "Sarah",
-                host_lname: "Johnson",
-                accommodates: 2,
-                room_type: "Entire home/apt",
-                city: "New York",
-                country: "United States",
-                latitude: 40.7505,
-                longitude: -73.9934,
-                cancellation_policy: "moderate",
-                pool_available: false,
-                no_of_reviews: 156,
-                homemade_food_available: false
-            },
-            {
-                property_id: "LA009876",
-                host_id: "host_003",
-                property_type: "Villa",
-                price_per_night_usd: 350,
-                host_fname: "Michael",
-                host_lname: "Brown",
-                accommodates: 8,
-                room_type: "Entire home/apt",
-                city: "Los Angeles",
-                country: "United States",
-                latitude: 34.0522,
-                longitude: -118.2437,
-                cancellation_policy: "strict",
-                pool_available: true,
-                no_of_reviews: 43,
-                homemade_food_available: true
-            },
-            {
-                property_id: "CH002468",
-                host_id: "host_004",
-                property_type: "House",
-                price_per_night_usd: 180,
-                host_fname: "Lisa",
-                host_lname: "Davis",
-                accommodates: 6,
-                room_type: "Entire home/apt",
-                city: "Chicago",
-                country: "United States",
-                latitude: 41.8781,
-                longitude: -87.6298,
-                cancellation_policy: "moderate",
-                pool_available: false,
-                no_of_reviews: 92,
-                homemade_food_available: true
-            },
-            {
-                property_id: "SF013579",
-                host_id: "host_005",
-                property_type: "Apartment",
-                price_per_night_usd: 220,
-                host_fname: "David",
-                host_lname: "Wilson",
-                accommodates: 3,
-                room_type: "Private room",
-                city: "San Francisco",
-                country: "United States",
-                latitude: 37.7749,
-                longitude: -122.4194,
-                cancellation_policy: "flexible",
-                pool_available: false,
-                no_of_reviews: 134,
-                homemade_food_available: false
-            },
-            {
-                property_id: "MI024680",
-                host_id: "host_006",
-                property_type: "Condominium",
-                price_per_night_usd: 195,
-                host_fname: "Emma",
-                host_lname: "Garcia",
-                accommodates: 4,
-                room_type: "Entire home/apt",
-                city: "Miami",
-                country: "United States",
-                latitude: 25.7617,
-                longitude: -80.1918,
-                cancellation_policy: "moderate",
-                pool_available: true,
-                no_of_reviews: 78,
-                homemade_food_available: false
-            },
-            {
-                property_id: "NY097531",
-                host_id: "host_007",
-                property_type: "Apartment",
-                price_per_night_usd: 145,
-                host_fname: "James",
-                host_lname: "Martinez",
-                accommodates: 5,
-                room_type: "Entire home/apt",
-                city: "New York",
-                country: "United States",
-                latitude: 40.7282,
-                longitude: -74.0776,
-                cancellation_policy: "strict",
-                pool_available: false,
-                no_of_reviews: 203,
-                homemade_food_available: true
-            },
-            {
-                property_id: "LA086420",
-                host_id: "host_008",
-                property_type: "House",
-                price_per_night_usd: 275,
-                host_fname: "Anna",
-                host_lname: "Rodriguez",
-                accommodates: 7,
-                room_type: "Entire home/apt",
-                city: "Los Angeles",
-                country: "United States",
-                latitude: 34.0736,
-                longitude: -118.4004,
-                cancellation_policy: "flexible",
-                pool_available: true,
-                no_of_reviews: 67,
-                homemade_food_available: true
-            },
-            {
-                property_id: "CH075319",
-                host_id: "host_009",
-                property_type: "Studio",
-                price_per_night_usd: 95,
-                host_fname: "Chris",
-                host_lname: "Lee",
-                accommodates: 2,
-                room_type: "Private room",
-                city: "Chicago",
-                country: "United States",
-                latitude: 41.8676,
-                longitude: -87.6164,
-                cancellation_policy: "moderate",
-                pool_available: false,
-                no_of_reviews: 45,
-                homemade_food_available: false
-            },
-            {
-                property_id: "SF064208",
-                host_id: "host_010",
-                property_type: "Apartment",
-                price_per_night_usd: 310,
-                host_fname: "Maria",
-                host_lname: "Gonzalez",
-                accommodates: 4,
-                room_type: "Entire home/apt",
-                city: "San Francisco",
-                country: "United States",
-                latitude: 37.7849,
-                longitude: -122.4094,
-                cancellation_policy: "strict",
-                pool_available: false,
-                no_of_reviews: 112,
-                homemade_food_available: true
-            },
-            {
-                property_id: "MI053197",
-                host_id: "host_011",
-                property_type: "Villa",
-                price_per_night_usd: 425,
-                host_fname: "Robert",
-                host_lname: "Taylor",
-                accommodates: 10,
-                room_type: "Entire home/apt",
-                city: "Miami",
-                country: "United States",
-                latitude: 25.7907,
-                longitude: -80.1300,
-                cancellation_policy: "flexible",
-                pool_available: true,
-                no_of_reviews: 89,
-                homemade_food_available: true
-            },
-            {
-                property_id: "NY042086",
-                host_id: "host_012",
-                property_type: "Condominium",
-                price_per_night_usd: 165,
-                host_fname: "Jennifer",
-                host_lname: "Anderson",
-                accommodates: 3,
-                room_type: "Private room",
-                city: "New York",
-                country: "United States",
-                latitude: 40.7549,
-                longitude: -73.9840,
-                cancellation_policy: "moderate",
-                pool_available: false,
-                no_of_reviews: 167,
-                homemade_food_available: false
-            }
-        ];
-
-        let currentListings = [...listingsData];
-        let currentPage = 1;
-        const itemsPerPage = 6;
-
-        function renderListings(listings, page = 1) {
-            const startIndex = (page - 1) * itemsPerPage;
-            const endIndex = startIndex + itemsPerPage;
-            const pageListings = listings.slice(startIndex, endIndex);
-            
-            const grid = document.getElementById('listingsGrid');
-            grid.innerHTML = '';
-
-            pageListings.forEach(listing => {
-                const card = createListingCard(listing);
-                grid.appendChild(card);
-            });
-
-            renderPagination(listings.length, page);
-        }
-
-        function createListingCard(listing) {
-            const card = document.createElement('div');
-            card.className = 'listing-card';
-            card.setAttribute('data-property-id', listing.property_id);
-            card.setAttribute('data-host-id', listing.host_id);
-            card.setAttribute('data-property-type', listing.property_type);
-            card.setAttribute('data-price', listing.price_per_night_usd);
-            card.setAttribute('data-host-fname', listing.host_fname);
-            card.setAttribute('data-host-lname', listing.host_lname);
-            card.setAttribute('data-accommodates', listing.accommodates);
-            card.setAttribute('data-room-type', listing.room_type);
-            card.setAttribute('data-city', listing.city);
-            card.setAttribute('data-country', listing.country);
-            card.setAttribute('data-latitude', listing.latitude);
-            card.setAttribute('data-longitude', listing.longitude);
-            card.setAttribute('data-cancellation-policy', listing.cancellation_policy);
-            card.setAttribute('data-pool-available', listing.pool_available);
-            card.setAttribute('data-no-of-reviews', listing.no_of_reviews);
-            card.setAttribute('data-homemade-food-available', listing.homemade_food_available);
-
-            const amenities = [];
-            if (listing.pool_available) amenities.push('Pool');
-            if (listing.homemade_food_available) amenities.push('Homemade Food');
-            amenities.push('WiFi', 'Kitchen');
-
-            card.innerHTML = `
-                <div class="listing-image">
-                    ${listing.property_type} in ${listing.city}
-                </div>
-                <div class="listing-content">
-                    <div class="property-type">${listing.property_type}</div>
-                    <div class="listing-title">${listing.room_type} in ${listing.city}</div>
-                    <div class="location">${listing.city}, ${listing.country}</div>
-                    <div class="host-info">Hosted by ${listing.host_fname} ${listing.host_lname}</div>
-                    <div class="listing-details">
-                        <span>${listing.accommodates} guests</span>
-                        <span>${listing.cancellation_policy} cancellation</span>
-                    </div>
-                    <div class="price">$${listing.price_per_night_usd} <small>night</small></div>
-                    <div class="reviews">
-                        <span class="stars">★★★★☆</span>
-                        <span>${listing.no_of_reviews} reviews</span>
-                    </div>
-                    <div class="amenities">
-                        ${amenities.map(amenity => `<span class="amenity-tag">${amenity}</span>`).join('')}
-                    </div>
-                </div>
-            `;
-
-            return card;
-        }
-
-        function renderPagination(totalItems, currentPage) {
-            const totalPages = Math.ceil(totalItems / itemsPerPage);
-            const pagination = document.getElementById('pagination');
-            pagination.innerHTML = '';
-
-            for (let i = 1; i <= totalPages; i++) {
-                const btn = document.createElement('button');
-                btn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
-                btn.textContent = i;
-                btn.onclick = () => {
-                    renderListings(currentListings, i);
-                };
-                pagination.appendChild(btn);
-            }
-        }
-
-        function filterListings() {
-            const cityFilter = document.getElementById('cityFilter').value;
-            const typeFilter = document.getElementById('typeFilter').value;
-            const priceFilter = document.getElementById('priceFilter').value;
-
-            currentListings = listingsData.filter(listing => {
-                const cityMatch = !cityFilter || listing.city === cityFilter;
-                const typeMatch = !typeFilter || listing.property_type === typeFilter;
-                
-                let priceMatch = true;
-                if (priceFilter) {
-                    const price = listing.price_per_night_usd;
-                    switch(priceFilter) {
-                        case '0-100':
-                            priceMatch = price <= 100;
-                            break;
-                        case '100-200':
-                            priceMatch = price > 100 && price <= 200;
-                            break;
-                        case '200-300':
-                            priceMatch = price > 200 && price <= 300;
-                            break;
-                        case '300+':
-                            priceMatch = price > 300;
-                            break;
-                    }
-                }
-
-                return cityMatch && typeMatch && priceMatch;
-            });
-
-            renderListings(currentListings, 1);
-        }
-
-        function searchListings() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            
-            if (!searchTerm) {
-                currentListings = [...listingsData];
-            } else {
-                currentListings = listingsData.filter(listing =>
-                    listing.city.toLowerCase().includes(searchTerm) ||
-                    listing.property_type.toLowerCase().includes(searchTerm) ||
-                    listing.room_type.toLowerCase().includes(searchTerm) ||
-                    `${listing.host_fname} ${listing.host_lname}`.toLowerCase().includes(searchTerm)
-                );
-            }
-            
-            renderListings(currentListings, 1);
-        }
-
-        function clearFilters() {
-            document.getElementById('cityFilter').value = '';
-            document.getElementById('typeFilter').value = '';
-            document.getElementById('priceFilter').value = '';
-            document.getElementById('searchInput').value = '';
-            
-            currentListings = [...listingsData];
-            renderListings(currentListings, 1);
-        }
-
-        // Initialize page
-        document.addEventListener('DOMContentLoaded', function() {
-            renderListings(currentListings, 1);
-        });
-
-        // Add enter key support for search
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                searchListings();
-            }
-        });
-    </script>
-</body>
-</html>
+    
